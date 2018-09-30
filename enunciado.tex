@@ -119,9 +119,43 @@ los dos métodos (mejoran?, empeoran?, es lo que esperaba?).
   la interpolación \texttt{spline}, por ejemplo?). Incluya esta información en
   el informe.
 \end{ayuda}
+
+\vspace{1em}
+\noindent{\large \bf Problema 2}
+
+En este problema exploraremos una de las múltiples aplicaciones para los
+métodos de interpolación: la estimación de datos faltantes y la extrapolación.
+
+El archivo \texttt{GLB.Ts+dSST-short.csv} es una archivo de datos separado por
+comas. Los datos provienen del \emph{Goddard Institute for Space Science}
+(GISS) y contienen información sobre las anomalías de temperatura medidas en la
+tierra y los océanos a lo largo de los años. Para ser precisos, la columna
+titulada \texttt{J-D} indica la diferencia entre la temperatura base (elegida
+como la temperatura promedio entre los años 1951 y 1980) y el promedio
+anual (\emph{January-December}) para ese año, el cual se indica en la columna
+titulada \texttt{Year}.
+
+\vspace{0.5em}
+\noindent a) Estime el valor de la anomalía de temperatura promedio para el año
+2011 y compárelo con el valor medido que fue 0.58. Explique cómo hizo la
+estimación y por qué eligió hacerla de esa manera. ¿Puede explicar la
+diferencia entre su estimación y el valor real medido?
+
+\vspace{0.5em}
+\noindent b) Estime el valor que tendrá la anomalía de temperatura promedio
+para el año 2018. Explique cómo hizo la estimación y cómo esta depende del
+método escogido y sus detalles.
+
+\begin{ayuda}
+  - Utilice métodos de interpolación que pasen por todos los puntos. Más
+  adelante veremos otros métodos que interpolan funciones suaves sin pasar
+  exactamente por todos los puntos.
+
+  \noindent- Si le interesa obtener más información sobre los datos utilizados
+  en esta pregunta, consulte la siguiente página:
+  \href{https://data.giss.nasa.gov/gistemp/}{https://data.giss.nasa.gov/gistemp/}
+\end{ayuda}
+
 %% FIN ENUNCIADO ===============================================================
 %% =============================================================================
-
-
-
 \end{document}
