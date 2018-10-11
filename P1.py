@@ -26,6 +26,7 @@ def P(x): #Polinomio de interpolacion Lagrange
     return S
 
 #Grafico a 5 puuntos del polinomio de interpolacion
+plt.plot(x_pts, y_pts, 'o', ms=5, label="Puntos (x,y)")
 plt.plot(x_pts,P(x_pts), color="g", label="P(x) a 5 puntos")
 plt.xlabel("X")  
 plt.ylabel("Y") 
